@@ -1,0 +1,278 @@
+/* 
+==============================================
+   STUDENT INSTRUCTIONS - READ CAREFULLY!
+==============================================
+
+⚠️  IMPORTANT: DO NOT MODIFY ANY EXISTING CSS CODE!
+✅  ONLY ADD YOUR CODE IN THE DESIGNATED TASK AREAS
+📝  Look for comments that say "Write your code here:"
+🎯  Complete tasks 1-6 first, then attempt 7-9 if time permits
+
+Time Estimate: 45-60 minutes
+*/
+
+/* ============================================== */
+/*               EXISTING CSS - DO NOT TOUCH     */
+/* ============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+/* ============================================== */
+/*                CORE TASKS (1-6)               */
+/*          Complete these first!                 */
+/* ============================================== */
+
+/* 
+TASK 1: Add hover effect to primary button ⭐ CORE
+OBJECTIVE: Create visual feedback when users hover over the primary button
+
+REQUIREMENTS:
+1. Target: .btn-primary when hovered (:hover)
+2. Apply these styles:
+   - Change background color to: #2980b9
+   - Move button up by 2px: transform: translateY(-2px)
+
+Write your code here:
+*/
+
+/* 
+TASK 2: Add focus state to buttons ⭐ CORE  
+OBJECTIVE: Improve accessibility by showing which button is focused
+
+REQUIREMENTS:
+1. Target: all buttons (.btn) when focused (:focus)
+2. Apply these styles:
+   - Add outline: 3px solid #f39c12
+   - Add outline offset: 2px
+
+Write your code here:
+*/
+
+/* 
+TASK 3: Add active state to primary button ⭐ CORE
+OBJECTIVE: Show visual feedback when primary button is clicked
+
+REQUIREMENTS:
+1. Target: .btn-primary when active (:active - being clicked)
+2. Apply these styles:
+   - Change background color to: #21618c
+   - Reset position: transform: translateY(0)
+
+Write your code here:
+*/
+
+/* 
+TASK 4: Add hover effect to secondary button ⭐ CORE
+OBJECTIVE: Create consistent hover behavior for secondary buttons
+
+REQUIREMENTS:
+1. Target: .btn-secondary when hovered (:hover)
+2. Apply these styles:
+   - Change background color to: #7f8c8d
+   - Move button up by 2px: transform: translateY(-2px)
+
+Write your code here:
+*/
+
+/* 
+TASK 5: Add active state to secondary button ⭐ CORE
+OBJECTIVE: Show visual feedback when secondary button is clicked
+
+REQUIREMENTS:
+1. Target: .btn-secondary when active (:active)
+2. Apply these styles:
+   - Change background color to: #6c7b7d
+   - Reset position: transform: translateY(0)
+
+Write your code here:
+*/
+
+/* 
+TASK 6: Add hover effect to cards ⭐ CORE
+OBJECTIVE: Make cards interactive when users hover over them
+
+REQUIREMENTS:
+1. Target: section elements when hovered (:hover)
+2. Apply these styles:
+   - Move card up by 5px: transform: translateY(-5px)
+   - Enhance shadow: box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
+
+Write your code here:
+*/
+
+/* ============================================== */
+/*               EXISTING CSS - DO NOT TOUCH     */
+/* ============================================== */
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    flex: 1;
+}
+
+.navbar a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: x-large;
+}
+
+.navbar li:first-child a {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.navbar li:last-child a {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* ============================================== */
+/*              NEXT TASKS (7-9)                  */
+/* ============================================== */
+
+/* 
+TASK 7: Add hover effect to navigation links
+OBJECTIVE: Provide visual feedback when users hover over navigation links
+
+REQUIREMENTS:
+1. Target: anchor tags inside .navbar when hovered
+2. Apply these styles:
+   - Change background color to: #3498db
+   - Keep text color: white
+
+HINT: Use ".navbar a:hover"
+
+Write your code here:
+*/
+
+/* 
+TASK 8: Add focus state to navigation links
+OBJECTIVE: Improve accessibility for keyboard navigation
+
+REQUIREMENTS:
+1. Target: anchor tags inside .navbar when focused
+2. Apply these styles:
+   - Change background color to: #e74c3c
+   - Add outline: 2px solid #f39c12
+
+HINT: Use ".navbar a:focus"
+WHY: This helps users navigate with keyboard (Tab key)
+
+Write your code here:
+*/
+
+/* 
+TASK 9: Add active state to navigation links
+OBJECTIVE: Show feedback when navigation links are clicked
+
+REQUIREMENTS:
+1. Target: anchor tags inside .navbar when active
+2. Apply these styles:
+   - Change background color to: #c0392b
+   - Scale down slightly: transform: scale(0.98)
+
+HINT: Use ".navbar a:active"
+
+Write your code here:
+*/
+
+/* ============================================== */
+/*               EXISTING CSS - DO NOT TOUCH     */
+/* ============================================== */
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    /* FIXED: Added space */
+}

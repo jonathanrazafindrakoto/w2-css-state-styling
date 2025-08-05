@@ -1,0 +1,26 @@
+{
+  "name": "w2-css-state-styling",
+  "version": "1.0.0",
+  "description": "```bash git https://github.com/onja-org/w2-css-state-styling cd w2-css-state-styling ``` #### 3. You're ready to start!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onja-org/w2-css-state-styling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/onja-org/w2-css-state-styling/issues"
+  },
+  "homepage": "https://github.com/onja-org/w2-css-state-styling#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.0.0-beta.3",
+    "live-server": "^1.2.2"
+  }
+}
