@@ -17,9 +17,12 @@ cd w2-css-state-styling
 |   ├──card
 |   ├──results  
 ├──lab/
-|    ├──README.md
-|    ├──index.html
-|    ├──style.html    
+|     ├──test 
+|          ├──state-styling.test.js
+|     ├──index.html
+|     ├──README.md
+|     ├──styles.css
+|   
 ├── lesson/
 │   ├── state-styling.md        
 ├── ℹ️ README.md  

@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "```bash git https://github.com/onja-org/w2-css-state-styling cd w2-css-state-styling ``` #### 3. You're ready to start!",
   "main": "index.js",
+  "jest": {
+    "preset": "jest-puppeteer",
+    "reporters": [
+      "default",
+      "<rootDir>/congrats-reporter.js"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "live": "live-server --open=lab/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,8 +27,9 @@
   },
   "homepage": "https://github.com/onja-org/w2-css-state-styling#readme",
   "devDependencies": {
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^30.0.0-beta.3",
+    "jest": "^30.0.4",
+    "jest-puppeteer": "^11.0.0",
+    "puppeteer": "^24.14.0",
     "live-server": "^1.2.2"
   }
 }
