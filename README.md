@@ -7,6 +7,15 @@
 git https://github.com/onja-org/w2-css-state-styling
 cd w2-css-state-styling
 ```
+
+### 2. Run the code 
+
+``` 
+ npm run live 
+
+ ``` 
+
+
 #### 3. You're ready to start!
 
 
