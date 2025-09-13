@@ -107,7 +107,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.btn-primary:hover{
+    background color to: #2980b9;
+    transform: translateY(-2px);
+}
 /* 
 TASK 2: Add focus state to buttons ⭐ CORE  
 OBJECTIVE: Improve accessibility by showing which button is focused
@@ -120,7 +123,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.btn:focus{
+    outline: 3px solid #f39c12;
+    outline offset: 2px;
+}
 /* 
 TASK 3: Add active state to primary button ⭐ CORE
 OBJECTIVE: Show visual feedback when primary button is clicked
@@ -133,7 +139,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.btn-primary:active{
+    background-color:#21618c;
+    transform: translateY(0);
+}
 /* 
 TASK 4: Add hover effect to secondary button ⭐ CORE
 OBJECTIVE: Create consistent hover behavior for secondary buttons
@@ -146,7 +155,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.btn-secondary:hover{
+    background-color: #7f8c8d;
+    transform: translateY(-2px)
+}
 /* 
 TASK 5: Add active state to secondary button ⭐ CORE
 OBJECTIVE: Show visual feedback when secondary button is clicked
@@ -159,7 +171,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.btn-secondary:active{
+    background-color: #6c7b7d;
+    transform: translateY(0);
+}
 /* 
 TASK 6: Add hover effect to cards ⭐ CORE
 OBJECTIVE: Make cards interactive when users hover over them
@@ -172,7 +187,10 @@ REQUIREMENTS:
 
 Write your code here:
 */
-
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 /* ============================================== */
 /*               EXISTING CSS - DO NOT TOUCH     */
 /* ============================================== */
@@ -233,7 +251,10 @@ HINT: Use ".navbar a:hover"
 
 Write your code here:
 */
-
+.navbar a:hover{
+    background-color: #3498db;
+    color:white;
+}
 /* 
 TASK 8: Add focus state to navigation links
 OBJECTIVE: Improve accessibility for keyboard navigation
@@ -249,7 +270,10 @@ WHY: This helps users navigate with keyboard (Tab key)
 
 Write your code here:
 */
-
+.navbar a:focus{
+    background-color: #e74c3c;
+    outline: 2px solid #f39c12
+}
 /* 
 TASK 9: Add active state to navigation links
 OBJECTIVE: Show feedback when navigation links are clicked
@@ -264,7 +288,10 @@ HINT: Use ".navbar a:active"
 
 Write your code here:
 */
-
+.navbar a:active{
+    background-color: #c0392b;
+    transform: scale(0.98);
+}
 /* ============================================== */
 /*               EXISTING CSS - DO NOT TOUCH     */
 /* ============================================== */
